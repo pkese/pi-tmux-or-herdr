@@ -1,0 +1,22 @@
+{
+  "name": "pi-tmux-or-herdr",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Native Herdr/tmux terminal guidance, Herdr agent-state reporting, and Pi session-name synchronization.",
+  "keywords": [
+    "pi-package"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "scripts": {
+    "test": "node --experimental-transform-types --test tests/*.test.ts"
+  }
+}
